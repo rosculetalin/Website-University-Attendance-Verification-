@@ -1,0 +1,28 @@
+<br>
+<br>
+<h1>Attendance</h1>
+<br>
+<div class="grid-container">
+<p>Click on Active Course/Laboratoy to commit presence.</p>
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th>Courses</th>
+                <th>Laboratories</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let index of count">
+                <td><button (click)="onClickCourse(cours[index])">{{cours[index]}}</button></td>
+                <td><button (click)="onClickLab(labs[index])">{{labs[index]}}</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <nav>
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/login">Login</a>
+    </nav>
+</div>
+

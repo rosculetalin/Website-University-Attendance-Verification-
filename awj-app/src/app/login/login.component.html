@@ -1,0 +1,33 @@
+<br>
+<br>
+<h1>Login</h1>
+<br>
+<br>
+<div class="grid-container">
+  <form action="/action_page.php">
+    <label for="usr">Username</label>
+    <input [(ngModel)]="usernameVerify" type="text" id="usr" name="username" placeholder="Your username...">
+
+    <label for="pwd">Password</label>
+    <input [(ngModel)]="passwordVerify"  type="password" id="pwd" name="password" placeholder="Your password...">
+  
+    <input (click)="onSubmit()" type="submit" value="Submit">
+
+    <input routerLink="/registration" type="submit" value="Registration">
+  </form>
+  <br>
+  <br>
+
+  <div id="logged" *ngIf="success === true">
+    <script>
+      document.getElementById('logged').scrollIntoView()
+    </script>
+    <br>
+    <br>
+    <h1>Bine ati venit, {{usernameVerify}}</h1>
+    <form>
+        <input routerLink="/attendance" type="submit" value="Attendance">
+        <input routerLink="/profile" type="submit" value="Profile">
+    </form>
+  </div>
+</div>

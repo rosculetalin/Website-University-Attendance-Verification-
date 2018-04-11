@@ -1,0 +1,37 @@
+<br>
+<br>
+<h1>Registration</h1>
+<br>
+<br>
+<div class="grid-container">
+  <form action="/action_page.php">
+    <label for="usr">Username</label>
+    <input [(ngModel)]="usernameR" type="text" id="usr" name="username" placeholder="Your username...">
+
+    <label for="pwd">Password</label>
+    <input [(ngModel)]="passwordR" type="password" id="pwd" name="password" placeholder="Your password...">
+
+    <label for="fname">Name</label>
+    <input [(ngModel)]="nameR" type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="sname">Surname</label>
+    <input [(ngModel)]="surnameR" type="text" id="sname" name="surname" placeholder="Your surname...">
+
+    <label for="mail">E-mail</label>
+    <input [(ngModel)]="emailR" type="text" id="mail" name="email" placeholder="Your e-mail...">
+
+    <label for="sg">Series-Group</label>
+    <input [(ngModel)]="idR" type="text" id="sg" name="seriesgroup" placeholder="Your series-group...">
+  
+    <input (click)="onRegister()" type="submit" value="Submit">
+  </form>
+
+  <div *ngIf="success === true">
+      V-ati inregistrat cu succes ! Acum va puteti loga !
+      <nav>
+        <a routerLink="/login">Login</a>
+      </nav>
+    </div>
+
+</div>
+

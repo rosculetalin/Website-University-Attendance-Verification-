@@ -1,0 +1,30 @@
+<br>
+<br>
+<h1>Profile</h1>
+<br>
+<div class="grid-container">
+<p>
+Username: {{userCurrent.username}}<br>
+Name: {{userCurrent.name}}<br>
+Surname: {{userCurrent.surname}}<br>
+Email: {{userCurrent.email}}<br>
+ID: {{userCurrent.id}}<br>
+Attendance: <br>
+</p>
+
+    <ul>
+      <li *ngFor="let index of count">
+          {{userCurrent.attendance[index]}}
+      </li>
+    </ul>
+
+
+
+    <nav>
+        <a routerLink="/attendance">Attendance</a>
+        <a routerLink="/login">Login</a>
+    </nav>
+
+
+</div>
+

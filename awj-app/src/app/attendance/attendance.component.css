@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+  margin-left: 15%;
+  margin-right:15%;
+  width: 70%;
+}
+
+
+  .selected {
+    background-color: #4CAF50 !important;
+    color: white;
+  }
+  .laboratories {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .laboratories li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #4CAF50;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .laboratories li.selected:hover {
+    background-color: rgb(211, 27, 27) !important;
+    color: white;
+  }
+  .laboratories li:hover {
+    color: ;
+    background-color: rgb(251, 255, 0);
+    left: .1em;
+  }
+  .laboratories .text {
+    position: relative;
+    top: -3px;
+  }
+
+  .laboratories .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(0, 75, 40);
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
